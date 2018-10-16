@@ -1,0 +1,93 @@
+.header
+
+  &_black
+    background-color: $dark
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 2000
+
+  &_white
+    margin-top: 44px
+    background-color: $white
+    padding: 15px 0
+
+  &__menu
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0
+    list-style: none
+    font-size: 12px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+
+    li
+      text-align: center
+      padding-right: 1.6%
+      border-right: 1px dotted rgba($white, 0.2)
+
+      &:last-child
+        padding-right: 0
+        border-right: none
+  
+    a
+      color: $white
+
+      &:hover
+        color: darken($white, 20)
+  
+  &__logo
+    flex: 0 0 25%
+    max-width: 25%
+
+  &__contacts
+    flex: 0 0 70%
+    max-width: 70%
+
+.contacts
+
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+  &__phones
+    display: flex
+    font-size: 22px
+    font-weight: 500
+    line-height: 22px
+    text-transform: uppercase
+    
+    a
+      color: $dark
+
+      &:hover
+        color: darken($dark, 70)
+
+      &:first-child
+        margin-right: 13px
+        padding-right: 14px
+        border-right: 1px solid #cfcfd0
+      
+
+  &__button
+
+    margin-left: 27px
+
+    button
+          
+      img
+        width: 20px
+        vertical-align: middle
+
+      span
+        vertical-align: middle
+        line-height: 20px
+
+
+.togle-menu
+  display: none
+    
+

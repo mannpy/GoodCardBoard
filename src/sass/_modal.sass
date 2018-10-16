@@ -1,0 +1,98 @@
+.overlay
+  position: fixed
+  display: none
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 3000
+  background-color: rgba($black, 0.4)
+
+  .popup
+    position: fixed
+    left: 50%
+    top: 100px
+    width: 752px
+    transform: translateX(-50%)
+    background-color: #fff
+
+    &__close
+      position: absolute
+      right: -20px
+      top: -30px
+      font-size: 35px
+      color: $white
+      font-weight: 300
+      cursor: pointer
+
+    &__title
+      display: block
+      min-height: 71px
+      background-color: $active
+      color: $white
+      text-transform: uppercase
+      font-size: 21px
+      font-weight: 500
+      line-height: 71px
+      text-align: center
+
+    &__form
+      background: $modal-bg url(../img/modal/modal-bg.jpg) center no-repeat
+      background-size: cover
+      padding: 35px 88px 50px 88px
+      color: $white
+
+
+    &-form
+      text-align: center
+
+      &__header
+        font-size: 30px
+        font-weight: 400
+        line-height: 27px
+
+        span
+          display: block
+          font-size: 24px
+
+      &__label
+        display: block
+        margin-top: 23px
+        font-size: 20px
+        font-weight: 300
+        line-height: 30px
+
+      &__input
+        margin-top: 17px
+        padding-left: 18px
+        width: 365px
+        height: 56px
+        border-radius: 5px
+        border: 1px solid transparent
+        color: $dark
+        font-size: 14px
+        font-weight: 300
+        line-height: 42px
+
+      &__btn
+        width: 180px
+        height: 56px
+        margin-left: 16px
+        font-size: 15px
+        line-height: 22px
+
+      &__small
+        margin-top: 9px
+        font-size: 14px
+        font-weight: 300
+        line-height: 30px
+
+
+#overlay-thanks
+  text-align: center
+
+  .popup
+    max-width: 700px
+
+    &__form
+      color: $active
+      background: $bg-color-light
